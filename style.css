@@ -152,7 +152,9 @@ footer {
 .hero-image img,
 .about-image img {
     width: 100%;
-    max-width: 150px;
+    max-width: 200px;   /* good size for laptop & desktop */
     height: auto;
     border-radius: 10px;
+    display: block;     /* ensures it doesn’t stretch */
+    margin: 0 auto;     /* centers the photo */
 }
