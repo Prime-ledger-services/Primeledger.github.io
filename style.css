@@ -151,10 +151,24 @@ footer {
 
 .hero-image img,
 .about-image img {
-    width: 100%;
-    max-width: 180px;   /* good size for laptop & desktop */
+    width: auto;          /* lets the image keep its original width */
+    max-width: 200px;     /* adjust size */
+    max-height: 300px;    /* prevents it from covering whole screen */
     height: auto;
     border-radius: 10px;
-    display: block;     /* ensures it doesn’t stretch */
-    margin: 0 auto;     /* centers the photo */
+    display: block;
+    margin: 0 auto;
+}
+
+/* Hero section flex adjustment */
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  /* centers both text and image */
+    align-items: center;
+    padding: 50px 10%;
+}
+.hero-text, .hero-image {
+    flex: 1 1 300px;      /* limits how much space each takes */
+    max-width: 500px;     /* optional, keeps hero layout neat */
 }
