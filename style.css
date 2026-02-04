@@ -149,3 +149,10 @@ footer {
     }
 }
 
+.hero-image img,
+.about-image img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+}
