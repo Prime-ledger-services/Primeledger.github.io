@@ -44,7 +44,8 @@ header nav a {
     justify-content: space-between;
     align-items: center;
     padding: 50px 10%;
-    background-color: #f7f9fc;
+    max-height: none;     /* ensures hero section doesn’t force image to stretch */
+}
 }
 .hero-text h1 {
     color: #1a3d6c;
